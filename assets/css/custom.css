@@ -15,9 +15,11 @@ a:hover {
 	text-decoration:none;
 }
 
-
+.main {
+  width: 100%;
+}
 /*-----------------------------------
-	Navbar 
+	Navbar
 -----------------------------------*/
 
 .minicart{
@@ -47,7 +49,7 @@ a:hover {
 }
 
 /*-----------------------------------
-	Breadcrumb 
+	Breadcrumb
 -----------------------------------*/
 
 .breadcrumb > .active a{
@@ -78,7 +80,7 @@ a:hover {
 	padding-top: 32px;
 }
 
-/*----------------------------------- 
+/*-----------------------------------
 	Main
 -----------------------------------*/
 
@@ -86,8 +88,8 @@ a:hover {
 	padding: 0 32px;
 }
 
-/*-----------------------------------  
-	Logo and description 
+/*-----------------------------------
+	Logo and description
 ----------------------------------- */
 
 
@@ -120,7 +122,7 @@ a:hover {
 }
 
 
-/*-----------------------------------  
+/*-----------------------------------
 	Cart items list
 -----------------------------------*/
 
@@ -132,13 +134,23 @@ a:hover {
 .row{
 	box-shadow: 0 1px 0 #e1e5e8;
 	padding-bottom :0;
-	padding-left: 15px;
 	background-color: #ffffff;
 	margin-bottom: 11px;
 }
 
 .row span{
-	padding: 20px 0 6px 0;
+	padding: 20px 10px 6px 10px;
+  margin-bottom: 10px;
+}
+
+.row input{
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+.row img{
+  float: left;
+  padding: 10px;
 }
 
 /* Column Captions */
@@ -160,49 +172,33 @@ a:hover {
 	padding: 0 21px 0 0;
 }
 
-.columnCaptions span:last-child{
-	float: right;
-	padding-right: 72px;
+.column-price{
+  text-align: right;
+  width: 100px;
+  float: right;
+}
+
+.column-qty{
+  float: right;
 }
 
 
 /* Items */
 
-.itemName{	
+.itemName{
 	color: #727578;
 	font-size :16px;
 	font-weight: bold;
 	float: left;
-	padding-left:25px;
 }
 
-
-.quantity{	
+.quantity{
 	color: #4ea6bc;
 	font-size :18px;
 	font-weight: bold;
-	float : left;
-	width: 42px;
-	padding-left: 7px;
-}
-
-
-.popbtn{
-	background-color: #e6edf3;
-	margin-left: 25px;
-	height: 63px;
-	width: 40px;
-	padding: 32px 0 0 14px !important;
-	float: right;
-	cursor: pointer;
-}
-
-.arrow{
-	width: 0; 
-	height: 0; 
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-top: 6px solid #858e97;
+	float : right;
+  width: 50px;
+	margin-right: 10px;
 }
 
 .price{
@@ -210,8 +206,10 @@ a:hover {
 	font-size :18px;
 	font-weight: bold;
 	float: right;
+  margin-right: 7px;
+  width: 100px;
+  text-align: right;
 }
-
 
 /* Totals */
 
@@ -234,7 +232,7 @@ a:hover {
 .totals .order{
 	float: right;
 	padding: 0;
-	margin-top: 40px; 
+	margin-top: 40px;
 	padding-left: 5px;
 	cursor: pointer;
 }
@@ -277,8 +275,8 @@ a:hover {
 	margin-right: 10px;
 }
 
-/*-----------------------------------  
-	Media Queries 
+/*-----------------------------------
+	Media Queries
 ----------------------------------- */
 
 /* Tablet size */
@@ -322,10 +320,10 @@ a:hover {
 
 @media (max-width: 768px) {
 
-	.navbar{ 
+	.navbar{
 		padding:10px 0;
 	}
-	
+
 	.minicart{
 		margin-right: -1px;
 		padding-right: 0;
@@ -367,7 +365,7 @@ a:hover {
 		padding-bottom:10px;
 	}
 
-	.quantity{	
+	.quantity{
 		width: 23px;
 		padding-right: 40px !important;
 	}
@@ -379,7 +377,7 @@ a:hover {
 		right: 0;
 	}
 
-	.price{	
+	.price{
 		position: absolute;
 		right: 42px;
 	}
